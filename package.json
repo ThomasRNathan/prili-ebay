@@ -1,1 +1,9 @@
-
+{
+  "name": "prili-ebay-monorepo",
+  "private": true,
+  "workspaces": ["backend", "app"],
+  "scripts": {
+    "setup": "npm -w backend install && npm -w app install",
+    "dev": "npm -w backend run dev & npm -w app run start"
+            }
+}
